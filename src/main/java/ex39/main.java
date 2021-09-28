@@ -49,15 +49,15 @@ public class main {
 
         List<String> Webber = new ArrayList<>();
         Webber.add("Sally");
-        Webber.add("");
+        Webber.add("Webber");
         Webber.add("Web Developer");
         Webber.add("2015-12-18");
         emp.put("Webber", Webber);
 
-        System.out.printf("Name\t\t\t\t| Position\t| Separation date\n-----------------------------------------------\n");
+        System.out.printf("Name\t\t\t\t\t\t\t| Position\t\t\t| Separation date\n-----------------------------------------------------------\n");
         Set<Map.Entry<String, List<String>>> entries = emp.entrySet();
         for (Map.Entry<String, List<String>> entry : entries)
-            System.out.printf(entry.getValue().get(0) + " " + "%-18s" + "| " + entry.getValue().get(2) + "\t| " + entry.getValue().get(3) + "\n", entry.getValue().get(1));
+            System.out.printf("%-15s" + " " + "%-15s" + "| " + "%-15s" + "\t| " + entry.getValue().get(3) + "\n", entry.getValue().get(0), entry.getValue().get(1), entry.getValue().get(2));
 
     }
 }

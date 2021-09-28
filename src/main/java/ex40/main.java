@@ -71,7 +71,7 @@ public class main {
         Set<Map.Entry<String, List<String>>> entries2 = empsr.entrySet();
         System.out.printf("Name\t\t\t\t| Position\t| Separation date\n--------------------------------------------------\n");
         for (Map.Entry<String, List<String>> entry : entries2)
-            System.out.printf(entry.getValue().get(0) + " " + "%-18s" + "| " + entry.getValue().get(2) + "\t| " + entry.getValue().get(3) + "\n", entry.getValue().get(1));
+            System.out.printf("%-15s" + " " + "%-15s" + "| " + "%-15s" + "\t| " + entry.getValue().get(3) + "\n", entry.getValue().get(0), entry.getValue().get(1), entry.getValue().get(2));
 
     }
 }
